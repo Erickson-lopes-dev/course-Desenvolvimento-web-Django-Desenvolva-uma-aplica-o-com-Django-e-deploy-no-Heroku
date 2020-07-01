@@ -1,2 +1,2 @@
-<p>Desenvolva uma aplicação com Django 2.0 e deploy no Heroku.</p>
-<p>Link do Curso: https://www.udemy.com/course/django-20-heroku/<p>
+<p>Develop an application with Django 2.0 and deploy to Heroku.</p>
+<p>course link: https://www.udemy.com/course/django-20-heroku/<p>
