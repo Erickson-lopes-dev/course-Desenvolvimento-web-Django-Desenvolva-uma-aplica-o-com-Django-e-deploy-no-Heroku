@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', hello),
     path('articles/<int:year>', articles),
-    path('pesquisa/<str:name>', fname),
+    # path('pesquisa/<str:name>', fname),
+    path('pesquisa/<str:name>', fname2),
 ]

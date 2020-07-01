@@ -1,8 +1,9 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def hello(request):
-    return HttpResponse('hello world')
+    return render(request, 'index.html')
 
 
 def articles(request, year):
@@ -19,8 +20,12 @@ def lerDoBanco(name):
         if pessoa['nome'] == name:
             return f'{pessoa["nome"]} tem {pessoa["idade"]} anos'
     else:
-        return {'Nada encontrado'}
+        return 'Nada encontrado'
 
 
 def fname(request, name):
     return HttpResponse(lerDoBanco(name))
+
+
+def fname2(request, name):
+    return render(request, 'pessoa.html', {'person_detail': lerDoBanco(name)})

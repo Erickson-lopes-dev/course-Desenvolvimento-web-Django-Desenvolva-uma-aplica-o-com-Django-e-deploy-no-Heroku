@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if person_detail != 'Nada encontrado' %}
+    <h1>Pessoa encontrada</h1>
+    <p>{{ person_detail }}</p>
+
+{% else %}
+   <h1>Pessoa não encontrada</h1>
+{% endif %}
+</body>
+</html>
