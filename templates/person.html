@@ -7,7 +7,7 @@
 <body>
     <ul>
     {% for person in persons %}
-        <li>{{ person }}</li>
+        <li><a href="{% url 'person_update' person.id %}">{{ person }}</a></li>
     {% endfor %}
     </ul>
     <a href="{% url 'person_new' %}">Novo cliente</a>
